@@ -33,7 +33,7 @@ const HotelCard = ({ item }) => {
 
     return (
         <div>
-            <Link to={`https://www.google.com/maps/search/?api=1&query=${item?.name}`} target='_blank'>
+            <Link to={`https://www.google.com/maps/search/?api=1&query=${item?.address}`} target='_blank'>
                 <div className='border-2 rounded-lg hover:shadow-md overflow-hidden hover:scale-110 transform translate-x-1 duration-75'>
                     <img src={photoUrl? photoUrl: "/camping.png"}  alt={`${item?.name}`} className='rounded-lg h-[180px] w-full' />
                     <div className='flex flex-col gap-2 mt-2 px-2 py-3'>
